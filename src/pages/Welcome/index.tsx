@@ -1,6 +1,8 @@
 import React from "react";
 import LottieView from "lottie-react-native";
 import welcomeAnimation from '../../assets/welcomeAnimation.json'
+import Button from "../../components/Button";
+import { useNavigation } from "@react-navigation/native";
 
 import { 
     Container, 
@@ -10,9 +12,15 @@ import {
     SubTitle,
     WrapperAnimation,
 } from "./styles";
-import Button from "../../components/Button";
+
 
 export function Welcome() {
+    const navigation = useNavigation();
+
+    function handleNavigation() {
+        navigation.navigate('Home')
+    }
+
     return (
         <Container>
             <Content>
@@ -25,6 +33,7 @@ export function Welcome() {
             <Footer>
                 <Button 
                     title="Iniciar"
+                    onPress={handleNavigation}
                 />
             </Footer>
         </Container>

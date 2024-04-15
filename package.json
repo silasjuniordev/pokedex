@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.17",
+    "@react-navigation/stack": "^6.3.29",
     "audit": "^0.0.6",
     "axios": "^1.6.8",
     "expo": "^50.0.15",
@@ -19,7 +20,8 @@
     "react-native": "0.73.6",
     "react-native-reanimated": "^3.6.2",
     "react-router-dom": "^6.22.3",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "react-native-gesture-handler": "~2.14.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

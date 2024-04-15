@@ -1,8 +1,9 @@
+import 'react-native-gesture-handler'
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { ThemeProvider } from 'styled-components';
 import theme from './src/global/styles/theme';
-import { Welcome } from './src/pages/Welcome';
-import { Home } from './src/pages/Home';
+import { Routes } from './src/routes';
 
 export default function App() {
     return (
@@ -12,8 +13,7 @@ export default function App() {
                 backgroundColor="transparent"
                 translucent 
             />
-            {/* <Welcome /> */}
-            <Home />
+            <Routes />
         </ThemeProvider>
     )
 }
